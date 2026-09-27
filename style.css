@@ -1,0 +1,92 @@
+canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* Estilo retro/pixel */
+}
+
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#game_room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Canvas do Mapa */
+canvas {
+    border: 4px solid #323238;
+    border-radius: 6px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.6);
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+/* Painéis de Decisões e Estatísticas */
+#painel, #teia_tec {
+    background-color: #202024;
+    border: 2px solid #4d4d57;
+    border-radius: 8px;
+    padding: 20px;
+    width: 600px;
+    max-width: 90vw;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+#painel h2, #painel h3 {
+    color: #00b37e;
+    margin-bottom: 10px;
+}
+
+/* Botões do Jogo */
+button {
+    background-color: #29292e;
+    color: #e1e1e6;
+    border: 1px solid #00b37e;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #00b37e;
+    color: #121214;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Container de Controles */
+#bt_ctrls, #bt_alciliares {
+    display: flex;
+    gap: 10px;
+}
+
+/* Sub-paineis e listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    background: #29292e;
+    margin: 4px 0;
+    padding: 6px 10px;
+    border-radius: 4px;
+}

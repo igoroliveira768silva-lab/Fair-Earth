@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bela-Terra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game_room" style="text-align: center;">
+        <div id="bt_alciliares">
+             <p id="select_city" style="color: red;">você ainda não selecionou sua cidade!</p>
+             <button id="start">start</button>
+             <button id="sair_do_mapa">X</button>
+        </div>
+        <div id="game">
+        </div>
+        <div id="bt_ctrls" style="display: none;">
+            <button id="turno">turno</button>
+            <button id="dados">dados</button>
+            <button id="tecnologia">tecnologías</button>
+        </div>
+    </div>
+    <div id="painel" style="display: none;">
+        
+    </div>
+    <div id="teia_tec" style="display: none;">
+        <p id="msm_tec">Passe um turno para poder pesquisar</p>
+        <button id="voltar_tec">X</button>
+        <div id="tec-container" style="position: relative; width: 100%; height: 100%;">
+            <canvas id="tec-canvas" style="position: absolute; top:0; left:0; z-index: 1;"></canvas>
+            <div id="tec-buttons" style="position: absolute; top:0; left:0; z-index: 2; width:100%; height:100%;">
+                <button id="tec-cultivo">Cultivo</button>
+                <button id="tec-mineracao" style="display: none;">Mineração</button>
+                <button id="tec-estrativismo" style="display: none;">Estrativismo</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
